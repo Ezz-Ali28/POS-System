@@ -6,7 +6,7 @@ namespace POS_System
 {
     public partial class loginForm : Form
     {
-        public static string connectionString = @"Server=DESKTOP-DICV7RS\SQLEXPRESS03;Database=POS_System;Integrated Security=True;";
+        public static string connectionString = @"Data Source=DESKTOP-DICV7RS\SQLEXPRESS03;Initial Catalog=POS_System;Integrated Security=True;Pooling=False";
 
         public loginForm()
         {
@@ -32,6 +32,7 @@ namespace POS_System
         }
         private void login_Click(object sender, EventArgs e)
         {
+            //SqlConnection con = new SqlConnection();
             string username = userNameTextBox.Text.Trim();
             string password = passwordTextBox.Text;
 
@@ -57,7 +58,7 @@ namespace POS_System
                         {
                             // Login successful
                             MessageBox.Show("Login successful!");
-                            MainFormcs mainFormcs = new MainFormcs();
+                            Form1 mainFormcs = new Form1();
                             
                             mainFormcs.Show();
                             this.Hide();

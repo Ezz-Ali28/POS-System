@@ -41,7 +41,7 @@
             // 
             // userNameTextBox
             // 
-            userNameTextBox.Location = new Point(50, 167);
+            userNameTextBox.Location = new Point(80, 132);
             userNameTextBox.MaximumSize = new Size(268, 30);
             userNameTextBox.MinimumSize = new Size(268, 30);
             userNameTextBox.Name = "userNameTextBox";
@@ -50,19 +50,19 @@
             // 
             // passwordTextBox
             // 
-            passwordTextBox.Location = new Point(50, 256);
+            passwordTextBox.Location = new Point(80, 221);
             passwordTextBox.MaximumSize = new Size(268, 30);
             passwordTextBox.MinimumSize = new Size(268, 30);
             passwordTextBox.Name = "passwordTextBox";
             passwordTextBox.Size = new Size(268, 30);
-            passwordTextBox.UseSystemPasswordChar = true;
             passwordTextBox.TabIndex = 1;
+            passwordTextBox.UseSystemPasswordChar = true;
             // 
             // title
             // 
             title.AutoSize = true;
             title.Font = new Font("Arial", 25F);
-            title.Location = new Point(347, 30);
+            title.Location = new Point(152, 28);
             title.Name = "title";
             title.Size = new Size(98, 39);
             title.TabIndex = 2;
@@ -72,7 +72,7 @@
             // userName
             // 
             userName.AutoSize = true;
-            userName.Location = new Point(50, 136);
+            userName.Location = new Point(80, 101);
             userName.Name = "userName";
             userName.Size = new Size(60, 15);
             userName.TabIndex = 3;
@@ -81,7 +81,7 @@
             // password
             // 
             password.AutoSize = true;
-            password.Location = new Point(50, 222);
+            password.Location = new Point(80, 187);
             password.Name = "password";
             password.Size = new Size(57, 15);
             password.TabIndex = 4;
@@ -90,7 +90,7 @@
             // forgotPassword
             // 
             forgotPassword.AutoSize = true;
-            forgotPassword.Location = new Point(50, 319);
+            forgotPassword.Location = new Point(80, 284);
             forgotPassword.Name = "forgotPassword";
             forgotPassword.Size = new Size(100, 15);
             forgotPassword.TabIndex = 5;
@@ -101,18 +101,18 @@
             // 
             login.BackColor = Color.DarkCyan;
             login.ForeColor = Color.Black;
-            login.Location = new Point(347, 338);
+            login.Location = new Point(152, 336);
             login.Name = "login";
             login.Size = new Size(75, 38);
             login.TabIndex = 6;
             login.Text = "Login";
             login.UseVisualStyleBackColor = false;
-            login.Click += this.login_Click;
+            login.Click += login_Click;
             // 
             // isNewUser
             // 
             isNewUser.AutoSize = true;
-            isNewUser.Location = new Point(329, 389);
+            isNewUser.Location = new Point(134, 387);
             isNewUser.Name = "isNewUser";
             isNewUser.Size = new Size(62, 15);
             isNewUser.TabIndex = 7;
@@ -121,7 +121,7 @@
             // register
             // 
             register.AutoSize = true;
-            register.Location = new Point(387, 389);
+            register.Location = new Point(192, 387);
             register.Name = "register";
             register.Size = new Size(49, 15);
             register.TabIndex = 8;
@@ -133,7 +133,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(398, 450);
             Controls.Add(register);
             Controls.Add(isNewUser);
             Controls.Add(login);
